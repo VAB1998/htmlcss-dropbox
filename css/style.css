@@ -12,3 +12,56 @@ body{
 header{
     background-color: #8abae1;
 }
+
+/* NAVIGATION BAR */
+nav{
+    background-color: lightblue;
+}
+
+/* NAVIGATION LINKS. General Settings */
+nav li{
+    display: inline-block;
+    margin: 0 18px;
+}
+
+/* NAVIGATION BAR> LOGO */
+nav img{
+    vertical-align: text-bottom;
+}
+
+/* NAVIGATION LINKS. General Settings */
+nav li> a{
+    /* Style and Shape */
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+} 
+
+/* NAVIGATION CONTENTS Left and right */
+nav>div.navigation_content{
+    display: inline-block;
+} 
+
+/* BUTTONS. General Settings */
+
+
+
+/* FLOAT */
+.float_left{
+    float: left;
+}
+
+
+
+
+.float_right{
+    float: right;
+}
+
+.responsive{
+    width: 100%;
+    margin: 0 auto;
+    min-width: 1050px;
+    /* max-width: 1200px; */
+}
+
