@@ -46,6 +46,13 @@ h1{
     margin-bottom: 40px;
 }
 
+/* SECTIONS */
+section{
+    margin-top: 200px;
+}
+
+
+
 /* BUTTONS. General Settings */
 input[type="button"]{
     cursor: pointer;
@@ -63,8 +70,8 @@ nav>div.navigation_content{
     display: inline-block;
 } 
 
-/* NAVITATION BAR,HEADER> Short BUTTONS */
-input.short_button{
+/* NAVITATION BAR,HEADER> Narrow BUTTONS */
+input.narrow_button{
     padding: 0 20px;
 }
 
@@ -80,8 +87,8 @@ input.short_button{
 .responsive{
     width: 100%;
     margin: 0 auto;
-    min-width: 1170px;
-    max-width: 1200px; 
+    min-width: 1190px;
+    max-width: 1300px; 
 }
 
 /* CLEARFIX */
@@ -97,10 +104,28 @@ input.short_button{
     width: 38%; 
 }
 
+/* SECTION WRAPPER */
+.section_wrapper{
+    background-color: mediumslateblue;
+    padding: 0 110px;
+}
+
+
+
 /* NAVIGATION WRAPPER */
 #nav_wrapper{
     background-color: white;
     border-bottom: 1px solid lightgray;
+}
+
+
+
+
+/* COLUMNS WRAPPER */
+#columns_wrapper{
+    width: 100%;
+    background-color: mediumseagreen;
+    height: 400px;
 }
 
 /* HEADER CONTENT WRAPPER */
@@ -113,6 +138,15 @@ div#header_content_wrapper>img{
     width: 58%;
     vertical-align: top;
 }
+
+/* WRAPPER COLUMNS> COLUMNS */
+#columns_wrapper .column{
+    height: 100%;
+    width: calc(33% - 40px);
+    display: inline-block;
+    background-color: mediumturquoise;
+}
+
 
 /* The First P in HEADER CONTENT */
 #header_content p:first-child{
@@ -131,6 +165,10 @@ div#header_content_wrapper>img{
 }
 
 
+/* Only the EVEN column has a margin-left/right */
+#columns_wrapper div:nth-child(even){
+    margin: 0 60px;
+}
 
 
 
