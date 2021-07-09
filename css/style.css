@@ -68,17 +68,22 @@ input[type="button"]{
     background-color: #008eff;
 }
 
+input.shop_button{
+    width: 100%;
+}
 
 
 /* NAVIGATION CONTENTS Left and right */
-nav>div.navigation_content{
+div.navigation_content{
     display: inline-block;
 } 
 
-/* NAVITATION BAR,HEADER> Narrow BUTTONS */
-input.narrow_button{
+/* NAVITATION BAR,HEADER> LENGTH BUTTONS */
+input.lenght_1_button{
     padding: 0 20px;
 }
+
+
 
 /* COLUMNS> INFO 1 */
 div.info_1{
@@ -157,6 +162,7 @@ div#header_content_wrapper>img{
     width: calc(33% - 40px);
     display: inline-block;
     background-color: mediumturquoise;
+    padding: 0 20px;
 }
 
 
@@ -178,7 +184,7 @@ div#header_content_wrapper>img{
 
 
 /* Only the EVEN column has a margin-left/right */
-#columns_wrapper div:nth-child(even){
+#columns_wrapper div.column:nth-child(even){
     margin: 0 60px;
 }
 
