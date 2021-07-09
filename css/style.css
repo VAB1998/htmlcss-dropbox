@@ -11,6 +11,7 @@ body{
 
 header{
     background-color: #8abae1;
+    height: 700px;
 }
 
 /* NAVIGATION BAR */
@@ -38,10 +39,12 @@ nav li> a{
     font-weight: 600;
 } 
 
-/* NAVIGATION CONTENTS Left and right */
-nav>div.navigation_content{
-    display: inline-block;
-} 
+h1{
+    font-weight: 700;
+    font-size: 4em;
+    width: 100%;
+    margin-bottom: 40px;
+}
 
 /* BUTTONS. General Settings */
 input[type="button"]{
@@ -52,6 +55,13 @@ input[type="button"]{
     color: white;
     background-color: #008eff;
 }
+
+
+
+/* NAVIGATION CONTENTS Left and right */
+nav>div.navigation_content{
+    display: inline-block;
+} 
 
 /* NAVITATION BAR,HEADER> Short BUTTONS */
 input.short_button{
@@ -71,7 +81,7 @@ input.short_button{
     width: 100%;
     margin: 0 auto;
     min-width: 1170px;
-    max-width: 1400px; 
+    max-width: 1200px; 
 }
 
 /* CLEARFIX */
@@ -81,9 +91,49 @@ input.short_button{
     clear: both;
 }
 
+/* HEADER CONTENT */
+.content{
+    display: inline-block;
+    width: 38%; 
+}
 
 /* NAVIGATION WRAPPER */
 #nav_wrapper{
     background-color: white;
     border-bottom: 1px solid lightgray;
 }
+
+/* HEADER CONTENT WRAPPER */
+div#header_content_wrapper{
+    margin-top: 90px;
+}
+
+/* HEADER CONTENT> IMAGE */
+div#header_content_wrapper>img{
+    width: 58%;
+    vertical-align: top;
+}
+
+/* The First P in HEADER CONTENT */
+#header_content p:first-child{
+    margin-bottom: 20px;
+    padding-right: 60px;
+}
+
+/* The Second P in HEADER CONTENT */
+#header_content p:nth-child(3){
+    margin: 10px 0 30px 0;
+}
+
+/* The Third P in HEADER CONTENT */
+#header_content p:nth-child(4){
+    font-size: 50px
+}
+
+
+
+
+
+
+
+
