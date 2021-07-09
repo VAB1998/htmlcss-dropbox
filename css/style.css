@@ -15,7 +15,8 @@ header{
 
 /* NAVIGATION BAR */
 nav{
-    background-color: lightblue;
+    padding: 15px 20px 25px 20px;
+   
 }
 
 /* NAVIGATION LINKS. General Settings */
@@ -43,16 +44,24 @@ nav>div.navigation_content{
 } 
 
 /* BUTTONS. General Settings */
+input[type="button"]{
+    cursor: pointer;
+    border: none;
+    padding: 0 30px;
+    height: 28px;
+    color: white;
+    background-color: #008eff;
+}
 
-
+/* NAVITATION BAR,HEADER> Short BUTTONS */
+input.short_button{
+    padding: 0 20px;
+}
 
 /* FLOAT */
 .float_left{
     float: left;
 }
-
-
-
 
 .float_right{
     float: right;
@@ -61,7 +70,20 @@ nav>div.navigation_content{
 .responsive{
     width: 100%;
     margin: 0 auto;
-    min-width: 1050px;
-    /* max-width: 1200px; */
+    min-width: 1170px;
+    max-width: 1400px; 
 }
 
+/* CLEARFIX */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* NAVIGATION WRAPPER */
+#nav_wrapper{
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
