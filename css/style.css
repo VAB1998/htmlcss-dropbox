@@ -49,6 +49,7 @@ h1{
 /* SECTIONS */
 section{
     margin-top: 200px;
+    
 }
 
 h2{
@@ -89,6 +90,7 @@ input.lenght_1_button{
 div.info_1{
     text-align: center;
     padding: 10px 0;
+    border-bottom: 1px solid lightgray;
 }
 
 /* FLOAT */
@@ -124,11 +126,30 @@ div.info_1{
 .section_wrapper{
     background-color: mediumslateblue;
     padding: 0 110px;
+    /* height: 800px; */
+}
+
+/* INFO 2 */
+div.info_2{
+    padding: 25px 20px 0 20px;
+}
+
+/* BORDER BOTTOM Effect */
+div.border_bottom{
+    margin-top: 25px;
+    border-bottom: 1px solid lightgray;
+    width: 50px;
 }
 
 /* CHECKBOXES> SPAN */
 div.checkboxes > span{
     margin-right: 20px;
+}
+
+/* Some elements in INFO 2 have a bigger margin */
+div.info_2>p.info_price_per,
+div.info_2>p.info_funtions{
+    margin-bottom: 35px;
 }
 
 /* NAVIGATION WRAPPER */
@@ -141,7 +162,7 @@ div.checkboxes > span{
 #columns_wrapper{
     width: 100%;
     background-color: mediumseagreen;
-    height: 400px;
+    /* height: 400px; */
     margin-top: 30px;
 }
 
@@ -158,11 +179,12 @@ div#header_content_wrapper>img{
 
 /* WRAPPER COLUMNS> COLUMNS */
 #columns_wrapper .column{
-    height: 100%;
+    height: 800px;
     width: calc(33% - 40px);
     display: inline-block;
     background-color: mediumturquoise;
-    padding: 0 20px;
+    border: 1px solid lightgray;
+    
 }
 
 
@@ -187,6 +209,14 @@ div#header_content_wrapper>img{
 #columns_wrapper div.column:nth-child(even){
     margin: 0 60px;
 }
+
+/* All the CHILDREN of INFO 2: */
+div.info_2>*{
+    margin-bottom: 10px;
+}
+
+
+
 
 
 
