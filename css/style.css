@@ -49,7 +49,6 @@ h1{
 /* SECTIONS */
 section{
     margin-top: 200px;
-    
 }
 
 h2{
@@ -140,6 +139,11 @@ div.border_bottom{
     width: 50px;
 }
 
+/* All the CHILDREN of INFO 2: */
+div.info_2>*{
+    margin-bottom: 10px;
+}
+
 /* CHECKBOXES> SPAN */
 div.checkboxes > span{
     margin-right: 20px;
@@ -177,6 +181,14 @@ div.info_2>p.info_funtions{
 /* HEADER CONTENT WRAPPER */
 div#header_content_wrapper{
     margin-top: 90px;
+}
+
+/* HORIZONTAL COLUMN */
+div#horizontal_column{
+    margin-top: 80px;
+    width: 100%;
+    border: 1px solid lightgray;
+    /* height: 300px; */
 }
 
 /* HEADER CONTENT> IMAGE */
@@ -217,9 +229,15 @@ div#header_content_wrapper>img{
     margin: 0 60px;
 }
 
-/* All the CHILDREN of INFO 2: */
-div.info_2>*{
-    margin-bottom: 10px;
+
+/* HORIZONTAL COLUMN> INFO 2 */
+#horizontal_column > div.info_2 {
+    width: 70%;
+}
+
+/* HORIZONTAL COLUMN> INFO 2 */
+#horizontal_column > div:nth-child(3) {
+    width: 28%;
 }
 
 
