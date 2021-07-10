@@ -46,30 +46,47 @@ h1{
     margin-bottom: 40px;
 }
 
+h2{
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
 /* SECTIONS */
 section{
     margin-top: 200px;
 }
 
-h2{
-    font-weight: 700;
-    font-size: 3em;
-    
-    margin-bottom: 40px;
-}
-
 /* BUTTONS. General Settings */
 input[type="button"]{
     cursor: pointer;
-    border: none;
-    padding: 0 30px;
     height: 28px;
-    color: white;
+}
+/* TYPE 1 BUTTONS */
+input.type_1_button{
+    padding: 0 20px;
     background-color: #008eff;
+    color: white;
+    border: none;
 }
 
-input.shop_button{
+/* TYPE 2 BUTTONS */
+input.type_2_button{
     width: 100%;
+    background-color: #008eff;
+    color: white;
+    border: none;
+}
+
+/* TYPE 3 BUTTONS */
+input.type_3_button{
+    padding: 0 20px;
+    background-color: white;
+    border: 1px solid black;
 }
 
 
@@ -77,13 +94,6 @@ input.shop_button{
 div.navigation_content{
     display: inline-block;
 } 
-
-/* NAVITATION BAR,HEADER> LENGTH BUTTONS */
-input.lenght_1_button{
-    padding: 0 20px;
-}
-
-
 
 /* COLUMNS> INFO 1 */
 div.info_1{
@@ -144,6 +154,10 @@ div.info_2>*{
     margin-bottom: 10px;
 }
 
+div#info_partner{
+    width: 40%;
+}
+
 /* CHECKBOXES> SPAN */
 div.checkboxes > span{
     margin-right: 20px;
@@ -158,6 +172,11 @@ ul.info_list>li{
 /* LI>ICON */
 li>i.fa-check{
     color: #008eff ;
+}
+
+/* SECTION 2> IMAGE */
+div.section_wrapper>img{
+    width: 50%;
 }
 
 /* Some elements in INFO 2 have a bigger margin */
@@ -223,22 +242,26 @@ div#header_content_wrapper>img{
     font-size: 50px
 }
 
+/* HORIZONTAL COLUMN> INFO 2 */
+#horizontal_column > div.info_2 {
+    width: 70%;
+}
+
+/* HORIZONTAL COLUMN> INFO 2> BUTTON */
+#horizontal_column > div:nth-child(3) {
+    width: 28%;
+    margin-top: 25px;
+}
 
 /* Only the EVEN column has a margin-left/right */
 #columns_wrapper div.column:nth-child(even){
     margin: 0 60px;
 }
 
-
-/* HORIZONTAL COLUMN> INFO 2 */
-#horizontal_column > div.info_2 {
-    width: 70%;
+div#info_partner>*{
+    margin-top: 20px;
 }
 
-/* HORIZONTAL COLUMN> INFO 2 */
-#horizontal_column > div:nth-child(3) {
-    width: 28%;
-}
 
 
 
