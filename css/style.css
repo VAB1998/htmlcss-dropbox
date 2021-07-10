@@ -149,13 +149,16 @@ div.border_bottom{
     width: 50px;
 }
 
+/* OPERATION TOOL */
+div.operation_tool{
+    width: calc(32% - 30px);
+    margin: 21px 0;
+}
+
+
 /* All the CHILDREN of INFO 2: */
 div.info_2>*{
     margin-bottom: 10px;
-}
-
-div#info_partner{
-    width: 40%;
 }
 
 /* CHECKBOXES> SPAN */
@@ -177,6 +180,22 @@ li>i.fa-check{
 /* SECTION 2> IMAGE */
 div.section_wrapper>img{
     width: 50%;
+}
+
+/* OPERATION TOOL> IMAGE */
+div.operation_tool>img{
+    width: 100%;
+}
+
+/* All the COLUMNS in the central place */
+div.column:nth-child(3n+2){
+    margin: 0 60px;
+}
+
+/* All the OPERATION TOOLS in the central place */
+div.operation_tool:nth-child(3n+2){
+    width: calc(32% - 30px);
+    margin: 21px 54px;
 }
 
 /* Some elements in INFO 2 have a bigger margin */
@@ -210,6 +229,14 @@ div#horizontal_column{
     /* height: 300px; */
 }
 
+div#info_partner>*{
+    margin-top: 20px;
+}
+
+div#info_partner{
+    width: 40%;
+}
+
 /* HEADER CONTENT> IMAGE */
 div#header_content_wrapper>img{
     width: 58%;
@@ -220,7 +247,7 @@ div#header_content_wrapper>img{
 #columns_wrapper .column{
     height: 1000px;
     width: calc(33% - 40px);
-    display: inline-block;
+    /* display: inline-block; */
     
     border: 1px solid lightgray;
     
@@ -252,17 +279,6 @@ div#header_content_wrapper>img{
     width: 28%;
     margin-top: 25px;
 }
-
-/* Only the EVEN column has a margin-left/right */
-#columns_wrapper div.column:nth-child(even){
-    margin: 0 60px;
-}
-
-div#info_partner>*{
-    margin-top: 20px;
-}
-
-
 
 
 
