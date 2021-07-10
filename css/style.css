@@ -149,12 +149,23 @@ div.border_bottom{
     width: 50px;
 }
 
-/* OPERATION TOOL */
-div.operation_tool{
-    width: calc(32% - 30px);
-    margin: 21px 0;
+/* WRAPPER COLUMNS> COLUMNS */
+div.column{
+    height: 1000px;
+    border: 1px solid lightgray;
+    /* Give a Width and a Margin */
+    /*margin-right=x
+    calc(33.3333% - y px);
+    y=x-(number of boxes per row/x) */
+    width:  calc(33.33% - 30px);
+    margin-right: 45px; 
 }
 
+/* OPERATION TOOL */
+div.operation_tool{
+    width: calc(33.33% - 36px);
+    margin: 21px 54px 21px 0;
+}
 
 /* All the CHILDREN of INFO 2: */
 div.info_2>*{
@@ -188,14 +199,13 @@ div.operation_tool>img{
 }
 
 /* All the COLUMNS in the central place */
-div.column:nth-child(3n+2){
-    margin: 0 60px;
+div.column:nth-of-type(3n){
+    margin-right: 0;
 }
 
 /* All the OPERATION TOOLS in the central place */
-div.operation_tool:nth-of-type(3n+2){
-    width: calc(32% - 30px);
-    margin: 21px 54px;
+div.operation_tool:nth-of-type(3n){
+    margin: 21px 0;
 }
 
 /* Some elements in INFO 2 have a bigger margin */
@@ -247,16 +257,6 @@ div#customer_title{
 div#header_content_wrapper>img{
     width: 58%;
     vertical-align: top;
-}
-
-/* WRAPPER COLUMNS> COLUMNS */
-#columns_wrapper .column{
-    height: 1000px;
-    width: calc(33% - 40px);
-    /* display: inline-block; */
-    
-    border: 1px solid lightgray;
-    
 }
 
 /* The First P in HEADER CONTENT */
