@@ -48,7 +48,7 @@ h1{
 
 h2{
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2.4em;
     margin-bottom: 40px;
 }
 
@@ -69,25 +69,37 @@ input[type="button"]{
 /* TYPE 1 BUTTONS */
 input.type_1_button{
     padding: 0 20px;
-    background-color: #008eff;
-    color: white;
     border: none;
 }
 
 /* TYPE 2 BUTTONS */
 input.type_2_button{
     width: 100%;
-    background-color: #008eff;
-    color: white;
     border: none;
 }
 
 /* TYPE 3 BUTTONS */
 input.type_3_button{
     padding: 0 20px;
-    background-color: white;
     border: 1px solid black;
 }
+
+input.type_4_button{
+    padding: 0 40px;
+    border: none;
+}
+
+/* BLUE BUTTONS */
+input.blue_button{
+    background-color: #008eff;
+    color: white;
+}
+
+/* WHITE BUTTONS */
+input.white_button{
+   background-color: white;
+}
+
 
 
 /* NAVIGATION CONTENTS Left and right */
@@ -379,4 +391,11 @@ svg.customer_logo{
 /* SECTION 4- BIG CUSTOMER BLOCK */
 div#big_customer_block{
     padding: 25px;
+}
+
+
+/* SECTION 4- WIDE CUSTOMER BLOCK */
+div.wide_customer_block>div{
+    width: 50%;
+    padding: 90px 0 0 110px;
 }
