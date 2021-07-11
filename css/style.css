@@ -145,6 +145,33 @@ div.info_1{
     padding: 0 110px;
 }
 
+/* COLORS */
+.color_1{
+    background-color: #a2d39b;
+    /* border: 10px solid #ffffff80; */
+}
+.color_2{
+    background-color: #61082b;
+}
+.color_3{
+    background-color: #0093ce;
+}
+.color_4{
+    background-color: #ff1c1c;
+}
+.color_5{
+    background-color: #d5001f;
+}
+.color_6{
+    background-color: #0d2481;
+}
+.color_7{
+    background-color: #0093ce;
+}
+.color_8{
+    background-color: #ffd830;
+}
+
 /* INFO 2 */
 div.info_2,
 div.info_3{
@@ -307,9 +334,7 @@ div.customer_block_container{
 /* SECTION 4- CUSTOMER BLOCKS */
 div.customer_block{
     width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    background-color: teal;
+    height: 200px; 
     float: left;
     position: relative;
     
@@ -319,7 +344,7 @@ div.customer_block{
 #big_customer_block{
     width: calc(100% - 800px);
     min-width: 500px;
-    background-color: tomato;
+    background-color: #eaeaea;
     height: 400px;
 }
 
@@ -341,3 +366,17 @@ svg.customer_logo{
     fill: white;
 }
 
+/* SECTION 4- BIG CUSTOMER BLOCK> CUSTOMER LOGO  */
+#big_customer_block .customer_logo{
+    fill: black;
+}
+
+/* SECTION 4- BIG CUSTOMER BLOCK> P */
+#big_customer_block>p{
+    margin: 30px 0;
+}
+
+/* SECTION 4- BIG CUSTOMER BLOCK */
+div#big_customer_block{
+    padding: 25px;
+}
