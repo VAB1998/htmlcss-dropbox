@@ -111,11 +111,20 @@ div.info_1{
     float: right;
 }
 
+/* RESPONSIVENESS */
 .responsive{
     width: 100%;
     margin: 0 auto;
     min-width: 1190px;
     max-width: 1300px; 
+}
+
+/* ABSOLUTE CENTERING */
+.absolute_centering{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* CLEARFIX */
@@ -145,7 +154,7 @@ div.info_3{
 /* BORDER BOTTOM Effect */
 div.border_bottom{
     margin-top: 25px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 2px solid lightgray;
     width: 50px;
 }
 
@@ -328,10 +337,7 @@ div.wide_customer_block{
 
 /* SECTION 4- CUSTOMER LOGO */
 svg.customer_logo{
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 120px;
     fill: white;
 }
+
