@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* QUI */
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -17,7 +17,6 @@ header{
 h1{
     font-weight: 700;
     font-size: 4em;
-    /* width: 100%; */
     margin-bottom: 40px;
 }
 
@@ -38,13 +37,12 @@ h4{
 footer{
     background-color: black;
     color: white;
-    /* height: 350px; */
 }
 
 /* HEADER- NAVIGATION BAR */
+/* QUI */
 nav{
-    padding: 15px 20px 25px 20px;
-   
+    padding: 15px 20px 25px 20px;  
 }
 
 /* HEADER- NAVIGATION LINKS. General Settings */
@@ -67,6 +65,7 @@ nav li> a{
 } 
 
 /* SECTIONS and FOOTER */
+/* QUI */
 section,
 footer{
     margin-top: 200px;
@@ -74,32 +73,33 @@ footer{
 
 /* ------Repeated Parts of Code------ */
 /* BUTTONS. General Settings */
-[type="button"]{
-    cursor: pointer;
-    height: 28px;
+.button{
+    text-align: center;
+    text-decoration: none;
 }
 
 /* TYPE 1 BUTTONS */
 .type_1_button{
-    padding: 0 20px;
-    border: none;
+    padding: 3px 20px;
 }
 
 /* TYPE 2 BUTTONS */
 .type_2_button{
     width: 100%;
     border: none;
+    display: inline-block;
+    padding: 6px 0;
 }
 
 /* TYPE 3 BUTTONS */
 .type_3_button{
-    padding: 0 20px;
+    padding: 6px 15px;
     border: 1px solid black;
 }
 
+/* TIPE 4 BUTTON */
 .type_4_button{
-    padding: 0 40px;
-    border: none;
+    padding: 3px 40px;
 }
 
 /* BLUE BUTTONS */
@@ -144,6 +144,8 @@ footer{
     display: table;
     clear: both;
 }
+/* ------END Repeated Parts of Code------ */
+
 
 /* HEADER CONTENT */
 .content{
@@ -198,10 +200,9 @@ div.navigation_content{
 div.column{
     height: 1000px;
     border: 1px solid lightgray;
-    /* Give a Width and a Margin */
     /*margin-right=x
-    calc(33.3333% - y px);
-    y=x-(x/number of boxes per row) */
+      calc(33.3333% - y px);
+      y=x-(x/number of boxes per row) */
     width:  calc(33.33% - 30px);
     margin-right: 45px; 
 }
@@ -401,7 +402,7 @@ footer div.nav_footer:last-of-type{
 
 /* SECTION 2- INFO PARTNER> All the elements */
 #info_partner>*{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /* SECTION 2- INFO PARTNER */
@@ -453,13 +454,11 @@ footer div.nav_footer:last-of-type{
 /* FOOTER- NAV */
 div.nav_footer{
     height: 300px;
-    /* Give a Width and a Margin */
     /*margin-right=x
-    calc(33.3333% - y px);
-    y=x-(x/number of boxes per row) */
+      calc(33.3333% - y px);
+      y=x-(x/number of boxes per row) */
     width:  calc((100%/5) - 32px);
-    margin: 90px 40px 90px 0 ; 
-    
+    margin: 90px 40px 90px 0 ;  
 }
 
 
