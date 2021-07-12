@@ -14,31 +14,6 @@ header{
     height: 700px;
 }
 
-/* NAVIGATION BAR */
-nav{
-    padding: 15px 20px 25px 20px;
-   
-}
-
-/* NAVIGATION LINKS. General Settings */
-nav li{
-    display: inline-block;
-    margin: 0 18px;
-}
-
-/* NAVIGATION BAR> LOGO */
-nav img{
-    vertical-align: text-bottom;
-}
-
-/* NAVIGATION LINKS. General Settings */
-nav li> a{
-    /* Style and Shape */
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-} 
-
 h1{
     font-weight: 700;
     font-size: 4em;
@@ -56,63 +31,75 @@ h3{
     font-size: 1.5em;
 }
 
+/* HEADER- NAVIGATION BAR */
+nav{
+    padding: 15px 20px 25px 20px;
+   
+}
+
+/* HEADER- NAVIGATION LINKS. General Settings */
+nav li{
+    display: inline-block;
+    margin: 0 18px;
+}
+
+/* HEADER- NAVIGATION BAR> LOGO */
+nav img{
+    vertical-align: text-bottom;
+}
+
+/* HEADER- NAVIGATION LINKS. General Settings */
+nav li> a{
+    /* Style and Shape */
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+} 
+
 /* SECTIONS */
 section{
     margin-top: 200px;
 }
 
+/* ------Repeated Parts of Code------ */
 /* BUTTONS. General Settings */
-input[type="button"]{
+[type="button"]{
     cursor: pointer;
     height: 28px;
 }
 
 /* TYPE 1 BUTTONS */
-input.type_1_button{
+.type_1_button{
     padding: 0 20px;
     border: none;
 }
 
 /* TYPE 2 BUTTONS */
-input.type_2_button{
+.type_2_button{
     width: 100%;
     border: none;
 }
 
 /* TYPE 3 BUTTONS */
-input.type_3_button{
+.type_3_button{
     padding: 0 20px;
     border: 1px solid black;
 }
 
-input.type_4_button{
+.type_4_button{
     padding: 0 40px;
     border: none;
 }
 
 /* BLUE BUTTONS */
-input.blue_button{
+.blue_button{
     background-color: #008eff;
     color: white;
 }
 
 /* WHITE BUTTONS */
-input.white_button{
+.white_button{
    background-color: white;
-}
-
-
-
-/* NAVIGATION CONTENTS Left and right */
-div.navigation_content{
-    display: inline-block;
-} 
-
-/* COLUMNS> INFO 1 */
-div.info_1{
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 1px solid lightgray;
 }
 
 /* FLOAT */
@@ -158,6 +145,13 @@ div.info_1{
     padding: 0 110px;
 }
 
+/* BORDER BOTTOM Effect */
+.border_bottom{
+    margin-top: 25px;
+    border-bottom: 2px solid lightgray;
+    width: 50px;
+}
+
 /* COLORS */
 .background_color_1{
     background-color: #a2d39b;
@@ -184,20 +178,12 @@ div.info_1{
     background-color: #ffd830;
 }
 
-/* INFO 2 */
-div.info_2,
-div.info_3{
-    padding: 25px 20px 0 20px;
-}
+/* HEADER- NAVIGATION CONTENTS Left and right */
+div.navigation_content{
+    display: inline-block;
+} 
 
-/* BORDER BOTTOM Effect */
-div.border_bottom{
-    margin-top: 25px;
-    border-bottom: 2px solid lightgray;
-    width: 50px;
-}
-
-/* WRAPPER COLUMNS> COLUMNS */
+/* SECTION 1- COLUMNS */
 div.column{
     height: 1000px;
     border: 1px solid lightgray;
@@ -209,131 +195,28 @@ div.column{
     margin-right: 45px; 
 }
 
-/* OPERATION TOOL */
-div.operation_tool{
-    width: calc(33.33% - 36px);
-    margin: 21px 54px 21px 0;
+/* SECTION 1- INFO 1 */
+div.info_1{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
 }
 
-/* All the CHILDREN of INFO 2: */
+/* SECTION 1- INFO 2 3 */
+div.info_2,
+div.info_3{
+    padding: 25px 20px 0 20px;
+}
+
+/* SECTION 1- All the CHILDREN of INFO 2: */
 div.info_2>*{
     margin-bottom: 10px;
 }
 
-/* CHECKBOXES> SPAN */
-div.checkboxes > span{
-    margin-right: 20px;
-}
-
-/* INFO LIST */
-ul.info_list>li{
-    list-style-type: none;
-    margin: 20px 0 ;
-}
-
-/* LI>ICON */
-li>i.fa-check{
-    color: #008eff ;
-}
-
-/* SECTION 2> IMAGE */
-#partner_section img{
-    width: 50%;
-}
-
-/* OPERATION TOOL> IMAGE */
-div.operation_tool>img{
-    width: 100%;
-}
-
-/* All the COLUMNS in the central place */
-div.column:nth-of-type(3n){
-    margin-right: 0;
-}
-
-/* All the OPERATION TOOLS in the central place */
-div.operation_tool:nth-of-type(3n){
-    margin: 21px 0;
-}
-
-/* Some elements in INFO 2 have a bigger margin */
-div.info_2>p.info_price_per,
-div.info_2>p.info_funtions{
-    margin-bottom: 35px;
-}
-
-/* NAVIGATION WRAPPER */
-#nav_wrapper{
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-}
-
-/* COLUMNS WRAPPER */
-#columns_wrapper{
-    width: 100%;
-    margin-top: 30px;
-}
-
-/* HEADER CONTENT WRAPPER */
-div#header_content_wrapper{
-    margin-top: 90px;
-}
-
-/* HORIZONTAL COLUMN */
-div#horizontal_column{
-    margin-top: 80px;
-    width: 100%;
-    border: 1px solid lightgray;
-    /* height: 300px; */
-}
-
-div#info_partner>*{
-    margin-top: 20px;
-}
-
-div#info_partner{
-    width: 40%;
-}
-
-/* CUSTOMER TITLE */
-div#customer_title{
-    padding-left: 110px;
-    width: 70%;
-    min-width: 1100px;
-    margin-bottom: 30px;
-}
-
-/* HEADER CONTENT> IMAGE */
-div#header_content_wrapper>img{
-    width: 58%;
-    vertical-align: top;
-}
-
-/* The First P in HEADER CONTENT */
-#header_content p:first-child{
-    margin-bottom: 20px;
-    padding-right: 60px;
-}
-
-/* The Second P in HEADER CONTENT */
-#header_content p:nth-child(3){
-    margin: 10px 0 30px 0;
-}
-
-/* The Third P in HEADER CONTENT */
-#header_content p:nth-child(4){
-    font-size: 50px
-}
-
-/* HORIZONTAL COLUMN> INFO 2 */
-#horizontal_column > div.info_2 {
-    width: 70%;
-}
-
-/* HORIZONTAL COLUMN> INFO 2> BUTTON */
-#horizontal_column > div:nth-child(3) {
-    width: 28%;
-    margin-top: 25px;
+/* SECTION 3- OPERATION TOOL */
+div.operation_tool{
+    width: calc(33.33% - 36px);
+    margin: 21px 54px 21px 0;
 }
 
 /* SECTION 4- CUSTOMER BLOCK CONTAINER  */
@@ -346,16 +229,22 @@ div.customer_block{
     width: 200px;
     height: 200px; 
     float: left;
-    position: relative;
-    
+    position: relative;  
+}
+
+/* SECTION 4- CUSTOMER LOGO */
+svg.customer_logo{
+    width: 120px;
+    fill: white;
 }
 
 /* SECTION 4- BIG CUSTOMER BLOCK */
-#big_customer_block{
+div.big_customer_block{
     width: calc(100% - 800px);
     min-width: 500px;
     background-color: #eaeaea;
     height: 400px;
+    padding: 25px;
 }
 
 /* SECTION 4- CUSTOMER CONTAINER WRAPPER */
@@ -369,36 +258,6 @@ div.wide_customer_block{
     width: 100%;
 }
 
-/* SECTION 4- CUSTOMER LOGO */
-svg.customer_logo{
-    width: 120px;
-    fill: white;
-}
-
-/* SECTION 4- BIG CUSTOMER BLOCK> CUSTOMER LOGO  */
-#big_customer_block .customer_logo{
-    fill: black;
-}
-
-/* SECTION 4- BIG CUSTOMER BLOCK> P */
-#big_customer_block>p{
-    margin: 30px 0;
-}
-
-/* SECTION 4- BIG CUSTOMER BLOCK */
-div#big_customer_block{
-    padding: 25px;
-}
-
-
-/* SECTION 4- WIDE CUSTOMER BLOCK */
-div.wide_customer_block>div{
-    width: 50%;
-    padding: 90px 0 0 110px;
-    color: #61082b;
-}
-
-
 /* SECTION 5- DROPDOWN MENU */
 select.dropdown_menu{
     width: 100%;
@@ -409,8 +268,166 @@ select.dropdown_menu{
     font-weight: bold;
 }
 
+/* SECTION 1- CHECKBOXES> SPAN */
+div.checkboxes > span{
+    margin-right: 20px;
+}
+
+/* SECTION 1- INFO LIST> LI */
+ul.info_list>li{
+    list-style-type: none;
+    margin: 20px 0 ;
+}
+
+/* SECTION 1 INFO LIST> ICON */
+li>i.fa-check{
+    color: #008eff ;
+}
+
+/* SECTION 2> IMAGE */
+#partner_section img{
+    width: 50%;
+}
+
+/* SECTION 3- OPERATION TOOL> IMAGE */
+div.operation_tool>img{
+    width: 100%;
+}
+
+/* SECTION 1- All the COLUMNS in the central place */
+div.column:nth-of-type(3n){
+    margin-right: 0;
+}
+
+/* SECTION 3- All the OPERATION TOOLS in the central place */
+div.operation_tool:nth-of-type(3n){
+    margin: 21px 0;
+}
+
+/* SECTION 4- BIG CUSTOMER BLOCK> P */
+div.big_customer_block>p{
+    margin: 30px 0;
+}
+
+/* SECTION 4- BIG CUSTOMER BLOCK> P */
+div.big_customer_block>p{
+    margin: 30px 0;
+}
+
+/* SECTION 4- WIDE CUSTOMER BLOCK>DIV */
+div.wide_customer_block>div{
+    width: 50%;
+    padding: 90px 0 0 110px;
+    color: #61082b;
+}
+
+/* SECTION 4- BIG CUSTOMER BLOCK> CUSTOMER LOGO  */
+div.big_customer_block .customer_logo{
+    fill: black;
+}
+
 /* SECTION 5- The last of DROPDOWN MENU */
 select.dropdown_menu:last-of-type{
     border-bottom: 1px solid lightgray;
 } 
+
+/* SECTION 1- Some elements in INFO 2 have a bigger margin */
+div.info_2>p.info_price_per,
+div.info_2>p.info_funtions{
+    margin-bottom: 35px;
+}
+
+/* HEADER- NAVIGATION WRAPPER */
+#nav_wrapper{
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+ 
+/* HEADER- HEADER CONTENT WRAPPER */
+#header_content_wrapper{
+    margin-top: 90px;
+}
+
+/* SECTION 1- COLUMNS WRAPPER */
+#columns_wrapper{
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* SECTION 1- HORIZONTAL COLUMN */
+#horizontal_column{
+    margin-top: 80px;
+    width: 100%;
+    border: 1px solid lightgray;
+    /* height: 300px; */
+}
+
+/* SECTION 2- INFO PARTNER> All the elements */
+#info_partner>*{
+    margin-top: 20px;
+}
+
+/* SECTION 2- INFO PARTNER */
+#info_partner{
+    width: 40%;
+}
+
+/* SECTION 4- CUSTOMER TITLE */
+#customer_title{
+    width: 70%;
+    min-width: 1100px;
+    margin-bottom: 30px;
+}
+
+/* HEADER- HEADER CONTENT> IMAGE */
+#header_content_wrapper>img{
+    width: 58%;
+    vertical-align: top;
+}
+
+/* HEADER- HEADER CONTENT- The First P */
+#header_content p:first-child{
+    margin-bottom: 20px;
+    padding-right: 60px;
+}
+
+/* HEADER- HEADER CONTENT- The Second P */
+#header_content p:nth-child(3){
+    margin: 10px 0 30px 0;
+}
+
+/* HEADER- HEADER CONTENT- The Third P */
+#header_content p:nth-child(4){
+    font-size: 50px
+}
+
+/* SECTION 1- HORIZONTAL COLUMN> INFO 2 */
+#horizontal_column > div.info_2 {
+    width: 70%;
+}
+
+/* SECTION 1- HORIZONTAL COLUMN> INFO 2> BUTTON */
+#horizontal_column > div:nth-child(3) {
+    width: 28%;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
