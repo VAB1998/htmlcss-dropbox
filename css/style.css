@@ -66,8 +66,9 @@ nav li> a{
     font-weight: 600;
 } 
 
-/* SECTIONS */
-section{
+/* SECTIONS and FOOTER */
+section,
+footer{
     margin-top: 200px;
 }
 
@@ -147,7 +148,7 @@ section{
 /* HEADER CONTENT */
 .content{
     display: inline-block;
-    width: 38%; 
+    width: 36%; 
 }
 
 /* SECTION WRAPPER */
@@ -278,6 +279,21 @@ select.dropdown_menu{
     font-weight: bold;
 }
 
+/* FOOTER- DROPDOWN LANGUAGES */
+select.dropdown_languages{
+    margin: 30px 0;
+    font-size: 1.2em;
+    background-color: black;
+    color: grey;
+    border: none;
+}
+
+/* FOOTER- GLOBE ICON */
+i.fa-globe-americas{
+    transform: scale(1.2);
+    color: grey;
+}
+
 /* SECTION 1- CHECKBOXES> SPAN */
 div.checkboxes > span{
     margin-right: 20px;
@@ -292,6 +308,12 @@ ul.info_list>li{
 /* SECTION 1 INFO LIST> ICON */
 li>i.fa-check{
     color: #008eff ;
+}
+
+/* FOOTER- NAV FOOTER> LI */
+div.nav_footer li{
+    list-style-type: none;
+    margin: 15px 0;
 }
 
 /* SECTION 2> IMAGE */
@@ -347,6 +369,11 @@ div.info_2>p.info_funtions{
     margin-bottom: 35px;
 }
 
+/* FOOTER- The last NAV FOOTER: */
+footer div.nav_footer:last-of-type{
+    margin-right: 0;
+}
+
 /* HEADER- NAVIGATION WRAPPER */
 #nav_wrapper{
     background-color: white;
@@ -391,7 +418,7 @@ div.info_2>p.info_funtions{
 
 /* HEADER- HEADER CONTENT> IMAGE */
 #header_content_wrapper>img{
-    width: 58%;
+    width: 64%;
     vertical-align: top;
 }
 
@@ -437,25 +464,12 @@ div.nav_footer{
 
 
 
-/* FOOTER- The last NAV FOOTER: */
-footer div.nav_footer:last-of-type{
-    margin-right: 0;
-}
 
 
-/* FOOTER- NAV FOOTER> LI */
-div.nav_footer li{
-    list-style-type: none;
-    margin: 15px 0;
-}
 
 
-select.dropdown_languages{
-    margin: 30px 0;
-    background-color: black;
-    color: white;
-    border: none;
-}
+
+
 
 
 
