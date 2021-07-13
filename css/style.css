@@ -11,14 +11,14 @@ body{
 
 header{
     background-color: #8abae1;
-    height: 700px;
+    height: 650px;
     margin-bottom: 80px;
 }
 
 h1{
     font-weight: 700;
     font-size: 4em;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 h2{
@@ -83,7 +83,7 @@ section{
 }
 
 /* BLUE BUTTONS */
-.blue_button{
+a.blue_button{
     background-color: #008eff;
     color: white;
 }
@@ -91,6 +91,7 @@ section{
 /* WHITE BUTTONS */
 .white_button{
    background-color: white;
+   color: black;
 }
 
 /* FLOAT */
@@ -104,7 +105,7 @@ section{
 
 /* RESPONSIVENESS */
 .responsive{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     min-width: 1190px;
     max-width: 1300px; 
@@ -124,13 +125,17 @@ section{
     display: table;
     clear: both;
 }
-/* ------END Repeated Parts of Code------ */
 
 /* BORDER BOTTOM Effect */
 .border_bottom{
     margin-top: 25px;
     border-bottom: 2px solid lightgray;
     width: 50px;
+}
+
+/* NO DECORATED LINK */
+.no_decorated_link{
+    text-decoration: none;
 }
 
 /* COLORS */
@@ -161,7 +166,17 @@ section{
 .background_color_9{
     background-color: #fff;
 }
+/* ------END Repeated Parts of Code------ */
 
+/* HEADER- NAVIGATION BAR> A  */
+a.navigation_bar_link{
+    color: black;
+}
+
+/* FOOTER- FOOTER LINK */
+a.footer_link{
+    color: white;
+}
 /* SECTION 1- COLUMNS */
 div.column{
     height: 1000px;
@@ -259,8 +274,6 @@ i.fa-globe-americas{
 /* HEADER- NAVIGATION Content> li */
 div.navigation_content li>a{
     /* Style and Shape */
-    color: black;
-    text-decoration: none;
     font-weight: 600;
 } 
 
@@ -400,6 +413,12 @@ footer div.nav_footer:last-of-type{
     vertical-align: top;
 }
 
+/* HEADER- NAVIGATION BAR */
+#navigation_bar{
+    position: fixed;
+    width: 100%;
+}
+
 /* HEADER- NAVIGATION BAR> LI */
 #navigation_bar li{
     display: inline-block;
@@ -418,8 +437,9 @@ footer div.nav_footer:last-of-type{
 }
 
 /* HEADER- HEADER CONTENT- The Third P */
-#jumbotron_content p:nth-child(4){
-    font-size: 50px
+a.down_arrow_link{
+    font-size: 50px;
+    color: black;
 }
 
 /* SECTION 1- HORIZONTAL COLUMN> INFO 2 */
@@ -444,11 +464,6 @@ div.nav_footer{
 }
 
 
-#navigation_bar{
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-}
 
 
 
