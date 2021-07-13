@@ -121,7 +121,7 @@ section{
 
 /* RESPONSIVENESS */
 .responsive{
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     min-width: 1190px;
     max-width: 1300px; 
@@ -140,11 +140,6 @@ section{
     content: "";
     display: table;
     clear: both;
-}
-
-/* SIDE PADDING */
-.side_padding{
-    padding: 0 110px;
 }
 /* ------END Repeated Parts of Code------ */
 
@@ -261,12 +256,6 @@ div.customer_container_wrapper{
     min-width: 1300px;
 }
 
-/* SECTION 4- WIDE CUSTOMER BLOCK */
-div.wide_customer_block_bg{
-    height: 300px;
-    width: 100%;
-}
-
 /* SECTION 5- DROPDOWN MENU */
 select.dropdown_menu{
     width: 100%;
@@ -348,7 +337,7 @@ div.big_customer_block>p{
 /* SECTION 4- WIDE CUSTOMER BLOCK>DIV */
 div.wide_customer_block>div{
     width: 50%;
-    padding: 90px 0 0 180px;
+    padding: 90px 0;
     color: #61082b;
 }
 
@@ -373,8 +362,13 @@ footer div.nav_footer:last-of-type{
     margin-right: 0;
 }
 
+/* HEADER- NAVIGATION BAR */
+#navigation_bar{
+    min-width: 1190px;
+}
+
 /* HEADER- NAVIGATION WRAPPER */
-#nav_wrapper{
+.nav_bg{
     background-color: white;
     border-bottom: 1px solid lightgray;
 }
@@ -445,7 +439,6 @@ footer div.nav_footer:last-of-type{
     width: 28%;
     margin-top: 25px;
 }
-
 
 /* FOOTER- NAV */
 div.nav_footer{
