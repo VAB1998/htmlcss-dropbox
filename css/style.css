@@ -12,6 +12,7 @@ body{
 header{
     background-color: #8abae1;
     height: 700px;
+    margin-bottom: 80px;
 }
 
 h1{
@@ -39,29 +40,11 @@ footer{
     color: white;
 }
 
-/* HEADER- NAVIGATION BAR */
-nav{
-    padding: 15px 20px 25px 20px;  
-}
-
-/* HEADER- NAVIGATION LINKS. General Settings */
-nav li{
-    display: inline-block;
-    margin: 0 18px;
-}
-
 /* HEADER- NAVIGATION BAR> LOGO */
-nav img{
+#navigation_bar img{
     vertical-align: text-bottom;
 }
 
-/* HEADER- NAVIGATION LINKS. General Settings */
-nav li> a{
-    /* Style and Shape */
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-} 
 
 /* SECTIONS and FOOTER */
 section{
@@ -143,13 +126,6 @@ section{
 }
 /* ------END Repeated Parts of Code------ */
 
-
-/* HEADER CONTENT */
-.content{
-    display: inline-block;
-    width: 36%; 
-}
-
 /* BORDER BOTTOM Effect */
 .border_bottom{
     margin-top: 25px;
@@ -182,11 +158,9 @@ section{
 .background_color_8{
     background-color: #ffd830;
 }
-
-/* HEADER- NAVIGATION CONTENTS Left and right */
-div.navigation_content{
-    display: inline-block;
-} 
+.background_color_9{
+    background-color: #fff;
+}
 
 /* SECTION 1- COLUMNS */
 div.column{
@@ -282,6 +256,14 @@ i.fa-globe-americas{
     color: grey;
 }
 
+/* HEADER- NAVIGATION Content> li */
+div.navigation_content li>a{
+    /* Style and Shape */
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+} 
+
 /* SECTION 1- CHECKBOXES> SPAN */
 div.checkboxes > span{
     margin-right: 20px;
@@ -365,17 +347,18 @@ footer div.nav_footer:last-of-type{
 /* HEADER- NAVIGATION BAR */
 #navigation_bar{
     min-width: 1190px;
-}
-
-/* HEADER- NAVIGATION WRAPPER */
-.nav_bg{
-    background-color: white;
     border-bottom: 1px solid lightgray;
+    padding: 20px 20px 25px 20px;
 }
  
-/* HEADER- HEADER CONTENT WRAPPER */
-#header_content_wrapper{
-    margin-top: 90px;
+/* HEADER- JUMBOTRON */
+#jumbotron{
+    padding-top: 90px;
+}
+
+/* JUMBOTRON CONTENT */
+#jumbotron_content{
+    width: 36%; 
 }
 
 /* SECTION 1- COLUMNS WRAPPER */
@@ -407,25 +390,31 @@ footer div.nav_footer:last-of-type{
     margin-bottom: 30px;
 }
 
-/* HEADER- HEADER CONTENT> IMAGE */
-#header_content_wrapper>img{
-    width: 64%;
+/* HEADER- JUMBOTRON> IMAGE */
+#jumbotron_image{
+    width: 62%;
     vertical-align: top;
 }
 
+/* HEADER- NAVIGATION BAR> LI */
+#navigation_bar li{
+    display: inline-block;
+    margin: 0 18px;
+}
+
 /* HEADER- HEADER CONTENT- The First P */
-#header_content p:first-child{
+#jumbotron_content p:first-child{
     margin-bottom: 20px;
     padding-right: 60px;
 }
 
 /* HEADER- HEADER CONTENT- The Second P */
-#header_content p:nth-child(3){
+#jumbotron_content p:nth-child(3){
     margin: 10px 0 30px 0;
 }
 
 /* HEADER- HEADER CONTENT- The Third P */
-#header_content p:nth-child(4){
+#jumbotron_content p:nth-child(4){
     font-size: 50px
 }
 
