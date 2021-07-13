@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-/* QUI */
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -40,7 +40,6 @@ footer{
 }
 
 /* HEADER- NAVIGATION BAR */
-/* QUI */
 nav{
     padding: 15px 20px 25px 20px;  
 }
@@ -65,10 +64,8 @@ nav li> a{
 } 
 
 /* SECTIONS and FOOTER */
-/* QUI */
-section,
-footer{
-    margin-top: 200px;
+section{
+    padding: 100px 0;
 }
 
 /* ------Repeated Parts of Code------ */
@@ -144,6 +141,11 @@ footer{
     display: table;
     clear: both;
 }
+
+/* SIDE PADDING */
+.side_padding{
+    padding: 0 110px;
+}
 /* ------END Repeated Parts of Code------ */
 
 
@@ -151,11 +153,6 @@ footer{
 .content{
     display: inline-block;
     width: 36%; 
-}
-
-/* SECTION WRAPPER */
-.side_padding{
-    padding: 0 110px;
 }
 
 /* BORDER BOTTOM Effect */
@@ -245,9 +242,9 @@ div.customer_block{
 }
 
 /* SECTION 4- CUSTOMER LOGO */
-svg.customer_logo{
+.customer_logo{
     width: 110px;
-    fill: white;
+    filter: invert(100%) saturate(0%) brightness(100%);
 }
 
 /* SECTION 4- BIG CUSTOMER BLOCK */
@@ -265,7 +262,7 @@ div.customer_container_wrapper{
 }
 
 /* SECTION 4- WIDE CUSTOMER BLOCK */
-div.wide_customer_block{
+div.wide_customer_block_bg{
     height: 300px;
     width: 100%;
 }
@@ -279,6 +276,7 @@ select.dropdown_menu{
     border-top: 1px solid lightgray ;
     font-weight: bold;
 }
+
 
 /* FOOTER- DROPDOWN LANGUAGES */
 select.dropdown_languages{
@@ -350,13 +348,13 @@ div.big_customer_block>p{
 /* SECTION 4- WIDE CUSTOMER BLOCK>DIV */
 div.wide_customer_block>div{
     width: 50%;
-    padding: 90px 0 0 110px;
+    padding: 90px 0 0 180px;
     color: #61082b;
 }
 
 /* SECTION 4- BIG CUSTOMER BLOCK> CUSTOMER LOGO  */
 div.big_customer_block .customer_logo{
-    fill: black;
+    filter: invert(0%) saturate(100%)  brightness(0%);
 }
 
 /* SECTION 5- The last of DROPDOWN MENU */
@@ -411,9 +409,7 @@ footer div.nav_footer:last-of-type{
 }
 
 /* SECTION 4- CUSTOMER TITLE */
-#customer_title{
-    width: 70%;
-    min-width: 1100px;
+#customer_title{ 
     margin-bottom: 30px;
 }
 
@@ -460,7 +456,6 @@ div.nav_footer{
     width:  calc((100%/5) - 32px);
     margin: 90px 40px 90px 0 ;  
 }
-
 
 
 
