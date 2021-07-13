@@ -347,8 +347,12 @@ footer div.nav_footer:last-of-type{
 /* HEADER- NAVIGATION BAR */
 #navigation_bar{
     min-width: 1190px;
+    width: 100%;
     border-bottom: 1px solid lightgray;
     padding: 20px 20px 25px 20px;
+    /* FIXED */
+    position: fixed;
+    z-index: 2;
 }
  
 /* HEADER- JUMBOTRON */
@@ -440,7 +444,11 @@ div.nav_footer{
 }
 
 
-
+#navigation_bar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
 
 
 
